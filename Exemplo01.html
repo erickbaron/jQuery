@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,26 @@
     <script src="jquery-3.4.1.min.js"></script>
     <script src="Exemplo01.js"></script>
 </head>
+
 <body>
-    <label>Logradouro</label>
-    <input type="text" id="logradouro">
-    
+    <label>Unidade Federativa</label>
+    <select id="unidade-federativa">
+        <option value="PR">PR</option>
+        <option value="RS">RS</option>
+        <option value="SC">SC</option>
+    </select>
+
     <label>Localidade</label>
     <input type="text" id="localidade">
+
+    <label>CEP </label>
+    <input type="text" id="cep" autofocus><!--onblur executa o comando quando o campo perde o foco -->
+
+    <label>Logradouro</label>
+    <input type="text" id="logradouro">
+
+    <label>Número</label>
+    <input type="text" id="numero">
 </body>
+
 </html>
